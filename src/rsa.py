@@ -17,3 +17,8 @@ def encrypt(message, public_key):
 def decrypt(ciphertext, private_key):
     d, n = private_key
     return power_mod(ciphertext, d, n)
+def encrypt_text(message, public_key):
+    return [encrypt(ord(c), public_key) for c in message]
+
+def decrypt_text(ciphertext, private_key):
+    return ''.join(chr(decrypt(c, private_key)) for c in ciphertext)
