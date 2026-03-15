@@ -4,8 +4,15 @@ A cryptography portfolio project that implements both classical and contemporary
 
 ## Overview
 
-This project showcases a comprehensive, from-scratch development of cryptographic systems, beginning with the foundational mathematics and advancing to full implementations of encryption and attack methods. Every algorithm is built independently, without using external cryptographic libraries, aiming to clarify the mathematical concepts that form the basis of contemporary security frameworks.
+This project showcases a comprehensive, from-scratch development of cryptographic systems, beginning with the foundational mathematics and advancing to full implementations of encryption and attack methods. Every algorithm is built independently, without using external cryptographic libraries, aiming to clarify the mathematical concepts that form the basis of contemporary security frameworks.   
 
+## Development Phases
+
+- **Phase 1** — Environment setup (Python, venv, git, project structure)
+- **Phase 2** — Cryptographic mathematics (GCD, Extended Euclidean, modular inverse, modular exponentiation)
+- **Phase 3** — Classical ciphers (Caesar, Vigenère, One-Time Pad)
+- **Phase 4** — RSA implementation and brute-force attack
+- **Phase 5** — Documentation (README, algorithm comparison, trace example)
 ## Project Structure
 
 ```
@@ -16,6 +23,7 @@ crypto_lab/
 │   ├── vigenere.py       # Vigenère cipher
 │   ├── otp.py            # One-Time Pad
 │   └── rsa.py            # RSA encryption system
+
 ├── attacks/
 │   └── rsa_attack.py     # Brute-force factorization attack on RSA
 ├── docs/
